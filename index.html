@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<style>
-		body{background-color:#4e9189;}
+		body{background-color:#FFF;}
 
 		#loader{
 			position:fixed;
@@ -17,15 +17,15 @@
 		}
 
 		#loader li{
-		  background-color:#ffffff;
+		  background-color:#000;
 		  width:10px;
-		  height:10px;
+		  height:45px;
 		  float:left;
 		  margin-right:5px;
 		  box-shadow: 0px 80px 20px rgba(0,0,0,0.2);
 		}
 
-		@-webkit-keyframes 'laadbalk' {
+		@-webkit-keyframes 'stretch' {
 			0%{
 				height: 10px;
 				margin-top: 25px;
@@ -41,13 +41,13 @@
 		}
 
 		#loader li:nth-child(1){
-		  -webkit-animation: laadbalk 0.6s ease-in-out infinite 0;
+		  -webkit-animation: stretch 0.8s ease-in-out infinite 0;
 		}
 		#loader li:nth-child(2){
-		  -webkit-animation: laadbalk 0.6s ease-in-out infinite -0.2s;
+		  -webkit-animation: stretch 0.8s ease-in-out infinite -0.2s;
 		}
 		#loader li:nth-child(3){
-		  -webkit-animation: laadbalk 0.6s ease-in-out infinite -0.4s;
+		  -webkit-animation: stretch 0.8s ease-in-out infinite -0.4s;
 		}
 		</style>
 	</head>
