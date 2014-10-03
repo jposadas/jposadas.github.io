@@ -1,61 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-		body{background-color:#FFF;}
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		#loader{
-			position:fixed;
-			margin:0 auto;
-			left:0;
-			right:0;
-			top:50%;
-			margin-top:-30px;
-			width:60px;
-			height:60px;
-		  list-style:none;
-		}
+    	<title>JP | Welcome</title>
 
-		#loader li{
-		  background-color:#000;
-		  width:10px;
-		  height:45px;
-		  float:left;
-		  margin-right:5px;
-		  box-shadow: 0px 80px 20px rgba(0,0,0,0.2);
-		}
-
-		@-webkit-keyframes 'stretch' {
-			0%{
-				height: 10px;
-				margin-top: 25px;
-			}
-			50%{
-				height:50px;
-				margin-top: 0px;
-			}
-			100%{
-				height: 10px;
-				margin-top: 25px;
-			}
-		}
-
-		#loader li:nth-child(1){
-		  -webkit-animation: stretch 0.9s ease-in-out infinite 0;
-		}
-		#loader li:nth-child(2){
-		  -webkit-animation: stretch 0.9s ease-in-out infinite -0.2s;
-		}
-		#loader li:nth-child(3){
-		  -webkit-animation: stretch 0.9s ease-in-out infinite -0.4s;
-		}
-		</style>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="custom.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head>
 	<body>
+		
 		<ul id="loader">
 			<li></li>
 			<li></li>
 			<li></li>
 		</ul>
+
+		<div class="typer">
+			<h1 data-line="1">I'm <span class="darker">Juan Posadas</span>, a Peruvian-American,</h1>
+			<h1 data-line="2"><span class="darker">Front-End</span> Developer and <span class="darker">UI Designer</span>. </h1>
+			<h1 data-line="3">Currently in <span class="darker">Durand</span> at <span class="stanford darker">Stanford</span>!</h1>
+		</div>
+
+		<script type="text/javascript" src="custom.js"></script>
+
 	</body>
 </html>
