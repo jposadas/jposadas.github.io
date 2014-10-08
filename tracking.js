@@ -4,9 +4,17 @@
 
 	$(document).ready(function() {
 		
-		var tracking = new Firebase('https://mes-tracking.firebaseio.com/github');
+		var tracking;
+
+		 
 
 		$.get('http://ipinfo.io', function(response) {
+
+			if (response.city === 'Stanford') {
+				tracking = new Firebase('https://mes-tracking.firebaseio.com/github/Stanford');
+			} else {
+				tracking = new Firebase('https://mes-tracking.firebaseio.com/github/Other');
+			}
 
 			tracking.push({
 				'date': getCurrentDate(),
